@@ -1,0 +1,12 @@
+<resources>
+    <!--Main Activity-->
+    <string name="app_name">Tip Calculator</string>
+    <string name="edit_message">Bill ($)</string>
+    <string name="button_send">Calculate Tip</string>
+    <string name="enter_tip">Tip (%)</string>
+    <string name="enter_people">Number of People</string>
+
+    <!--Display Tip Activity-->
+    <string name="tip_message">Each person needs to pay:</string>
+    <string name="again">Again</string>
+</resources>
