@@ -1,8 +1,6 @@
-package com.example.velikovs.myfirstapp;
-
+package codes.shaker.tipcalculator;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
@@ -15,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    /** Called when the user clicks the Send button */
+    /** Called when the user clicks the "Calculate Tip" button */
     public void sendMessage(View view) {
         Intent intent = new Intent(this, DisplayMessageActivity.class);
         double[] tipInfo = new double[3];

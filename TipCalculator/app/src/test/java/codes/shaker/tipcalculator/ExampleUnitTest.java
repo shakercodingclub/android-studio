@@ -1,4 +1,4 @@
-package com.example.velikovs.myfirstapp;
+package codes.shaker.tipcalculator;
 
 import org.junit.Test;
 

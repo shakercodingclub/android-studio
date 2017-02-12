@@ -1,8 +1,6 @@
-package com.example.velikovs.myfirstapp;
+package codes.shaker.tipcalculator;
 
 import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,13 +17,18 @@ public class DisplayMessageActivity extends AppCompatActivity {
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
         double[] tipInfo = bundle.getDoubleArray("array");
-        double ans = tipInfo[0]*tipInfo[1]/tipInfo[2];
+        double tip = tipInfo[0]*tipInfo[1]/tipInfo[2];
+        double total = (tipInfo[0]/tipInfo[2]) + tip;
 
         NumberFormat formatter = NumberFormat.getCurrencyInstance();
-        String answer = formatter.format(ans);
+        String total_s = formatter.format(total);
+        String tip_s = formatter.format(tip);
 
         TextView textView2 = (TextView)findViewById(R.id.textV2);
-        textView2.setText(answer);
+        textView2.setText(tip_s);
+
+        TextView textView4 = (TextView)findViewById(R.id.textV4);
+        textView4.setText(total_s);
     }
 
     public void newTip(View view){

@@ -7,6 +7,7 @@
     <string name="enter_people">Number of People</string>
 
     <!--Display Tip Activity-->
-    <string name="tip_message">Each person needs to pay:</string>
+    <string name="total_message">Total per person:</string>
+    <string name="tip_message">Tip per person:</string>
     <string name="again">Again</string>
 </resources>

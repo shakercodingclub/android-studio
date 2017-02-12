@@ -3,25 +3,31 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
     <EditText android:id="@+id/edit_message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/edit_message"
-        android:inputType="numberDecimal"/>
+        android:inputType="numberDecimal"
+        android:elegantTextHeight="true"
+        android:textColorLink="@android:color/darker_gray" />
     <EditText android:id="@+id/tip_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/enter_tip"
-        android:inputType="numberDecimal"/>
+        android:inputType="numberDecimal"
+        android:elegantTextHeight="true"
+        android:textColorLink="@android:color/darker_gray" />
     <EditText android:id="@+id/peep_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/enter_people"
-        android:inputType="number"/>
-
+        android:inputType="number"
+        android:elegantTextHeight="true"
+        android:textColorLink="@android:color/darker_gray" />
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="256dp"
         android:layout_height="wrap_content"
         android:text="@string/button_send"
         android:onClick="sendMessage"
