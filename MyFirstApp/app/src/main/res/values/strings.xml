@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyFirstApp</string>
+    <string name="edit_hint">What is your name?</string>
+    <string name="send_button">See the reply</string>
+</resources>
